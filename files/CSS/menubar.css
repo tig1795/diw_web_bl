@@ -8,11 +8,12 @@
 body{
     background-size: cover;
     background-position:center;
+    background-image: url(../../images/BL_Hintergrund.jpg);
     font-family: sans-serif;
 }
 
 .menu-bar{
-    background: white;
+    background: black;
     text-align: center;  
     border-bottom-style:groove;   
 }
@@ -31,14 +32,14 @@ body{
 
 .menu-bar ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .active, .menu-bar ul li a:hover 
 {
     /* background-color: white; */
     text-decoration: underline;
-    color: green;
+    color: red;
     border-radius: 3px;
 }
 
@@ -54,7 +55,7 @@ body{
     display: block;
     position: absolute;
     z-index:1000;
-    background: rgb(0, 100, 0);
+    background: black;
     margin-top: 15px;
     margin-left: -15px;
 }
@@ -99,7 +100,7 @@ body{
     display: block;
     margin-top: -40px;
     margin-left: 140px;
-    background: rgb(0,100,0);
+    background: black;
 }
 
 .menu-bar .search-container input[type=text] { 
@@ -107,7 +108,7 @@ body{
   margin-top: 8px;
   font-size: 17px;
   border:groove;
-  border-style: green;
+  border-style: white;
   }
   
   
@@ -116,14 +117,14 @@ body{
     padding: 9px;
     margin-top: 8px;
     margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
+    background: white;
+    font-size: 13px;
+    border: groove;
     cursor: pointer;
 }
   
   .menu-bar .search-container input[type=submit]:hover {
-    background: green;
+    background: red;
   }
   
   @media screen and (max-width: 600px) {
@@ -139,7 +140,7 @@ body{
       padding: 14px;
     }
     .menu-bar input[type=text] {
-        border: 1px solid #ccc;   
+        border: 1px solid white;   
     }
   }
 

@@ -100,7 +100,7 @@ function my_html_head ( $title) {
     <link rel="stylesheet" href="../CSS/menubar.css" type="text/css">
     <link rel="stylesheet" href="../CSS/slide.css" type="text/css">
     <link rel="stylesheet" href="../CSS/Fußzeile.css" type="text/css">
-	<link rel="stylesheet" href="../CSS/Lieblingsrezepte.css" type="text/css">
+	  <link rel="stylesheet" href="../CSS/Lieblingsrezepte.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -110,7 +110,7 @@ function my_html_head ( $title) {
  
   <div class="menu-bar">
     <div class="logo">
-      <a href="index2.php"><img src="../../images/chefkoch-logo_1-1-30.png" alt="" width="120" height="65"/></a>
+      <a href="index2.php"><img src="../../images/BL_Logo.jpg" alt="" width="75" height="46"/></a>
       </div>
     <ul>
 EOH;
@@ -125,7 +125,7 @@ EOH;
 active_or_hover ($title, "rezepte");
 
 print <<<EOH
-<a href="#"><i class="fa fa-book" aria-hidden="true"></i>Rezepte</a>
+<a href="#"><i class="fa fa-trophy" aria-hidden="true"></i>Meister</a>
         <div class="sub-menu-1">
           <ul>
             <li class="hover-me"><a href="#">Rezepte finden</a><i class="fa fa-angle-right"></i>
@@ -178,7 +178,7 @@ active_or_hover ($title, "magazin");
 
 print <<<EOH
 
-<a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Magazin</a>
+<a href="#"><i class="fa fa-users" aria-hidden="true"></i>Vereine</a>
         <div class="sub-menu-1">
           <ul>
             <li class="hover-me"><a href="#">Magazin Übersicht</a><i class="fa fa-angle-right"></i>
@@ -230,7 +230,7 @@ EOH;
 active_or_hover ($title, "community");
 
 print <<<EOH
-<a href="#"><i class="fa fa-users" aria-hidden="true"></i>Community</a>
+<a href="#"><i class="fa fa-history" aria-hidden="true"></i>Liveticker</a>
         <div class="sub-menu-1">
           <ul>
             <li class="hover-me"><a href="#">Chefkoch Events</a> 
@@ -274,7 +274,7 @@ active_or_hover ($title, "videos");
 
 print <<<EOH
 	  
-	  <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Videos</a>
+	  <a href="#"><i class="fa fa-table" aria-hidden="true"></i>Tabelle</a>
         <div class="sub-menu-1">
             <ul>
                  <li><a href="Lieblingsrezepte2.php">Lieblingsrezepte</a></li>
@@ -296,13 +296,13 @@ EOH;
 active_or_hover ($title, "dinner");
 
 print <<<EOH
-<a href="#"><i class="fa fa-heart" aria-hidden="true"></i>Das perfekte Dinner</a></li>
+<a href="#"><i class="fa fa-columns" aria-hidden="true"></i>Spielplan</a></li>
 EOH;
 
 active_or_hover ($title, "meinkochbuch");
 
 print <<<EOH
-<a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i>Mein Kochbuch</a></li>	  
+<a href="#"><i class="fa fa-calculator" aria-hidden="true"></i>Statistik</a></li>	  
 EOH;
 	  if(!isset($_SESSION['userid'])) {
     echo '<li><a href="login2.php"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Login</a></li>';
