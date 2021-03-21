@@ -2,7 +2,7 @@
 
 ##TODO:
 
-- Ewige Tabelle der Bundesliga fertig eintragen + Wiki Verlinkung.
+- Meisterschale einfügen + Fakts
 - Login-Überprüfen. 
 - Möglichkeit der Eintragung von weiteren Vereinen. 
 - About in der Menüleiste (Mit Quellenangaben)
