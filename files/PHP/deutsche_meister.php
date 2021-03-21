@@ -17,7 +17,7 @@
       <div class="nav-items">
           <li><a href="index2.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
           <li><a href="deutsche_meister.php" class="active"><i class="fa fa-trophy"></i> Deutsche Meister</a></li>
-          <li><a href="#"><i class="fa fa-calculator"></i> Statistik</a></li>
+          <li><a href="EW_Tabelle.php"><i class="fa fa-calculator"></i> Statistik</a></li>
           <li><a href="#"><i class="fa fa-users"></i> Vereine</a></li>
           <li><a href="#"><i class="fa fa-trophy"></i> Siegestrophäe</a></li>
           <li><a href="login2.php"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Login</a></li>
@@ -94,6 +94,18 @@ $db = @new mysqli('localhost', 'root', '', 'deutsche_meister_im_fußball');
 $sql = "SELECT * FROM deutsche_meister_1902_1963";
 $ergebnis = $db->query($sql);
     echo '<table border="1" class="gridtable">';
+print <<<EOH
+    <tr>
+    <th>ID</th>
+    <th>Saison</th>
+    <th>Meister</th>
+    <th>Endspieldatum</th>
+    <th>Endspielort</th>
+    <th>Enspielbegegnung</th>
+    <th>Ergebnis</th>
+    </tr>
+EOH;
+
     while ($zeile = mysqli_fetch_array($ergebnis, MYSQLI_ASSOC))
     {
         echo '<tr>';
@@ -137,6 +149,15 @@ $db = @new mysqli('localhost', 'root', '', 'deutsche_meister_im_fußball');
 $sql = "SELECT * FROM deutsche_meister_1963_2020";
 $ergebnis = $db->query($sql);
     echo '<table border="1" class="gridtable">';
+print <<<EOH
+    <tr>
+    <th>ID</th>
+    <th>Saison</th>
+    <th>Meister</th>
+    <th>Tore</th>
+    <th>Punkte</th>
+    </tr>;
+EOH;
     while ($zeile = mysqli_fetch_array($ergebnis, MYSQLI_ASSOC))
     {
         echo "<tr>";

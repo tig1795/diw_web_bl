@@ -112,6 +112,17 @@ EOH;
                     $ergebnis = $db->query($sql);
 
                     echo '<table border="1" class="gridtable">';
+                    print <<<EOH
+                    <tr>
+                    <th>ID</th>
+                    <th>Saison</th>
+                    <th>Meister</th>
+                    <th>Endspieldatum</th>
+                    <th>Endspielort</th>
+                    <th>Enspielbegegnung</th>
+                    <th>Ergebnis</th>
+                    </tr>
+                    EOH;
                     while ($zeile = mysqli_fetch_array($ergebnis, MYSQLI_ASSOC))
                     {
                         echo '<tr>';
@@ -178,6 +189,15 @@ EOH;
                     $ergebnis = $db->query($sql);
 
                     echo '<table border="1" class="gridtable">';
+                    print <<<EOH
+                    <tr>
+                    <th>ID</th>
+                    <th>Saison</th>
+                    <th>Meister</th>
+                    <th>Tore</th>
+                    <th>Punkte</th>
+                    </tr>;
+                    EOH;
                     while ($zeile = mysqli_fetch_array($ergebnis, MYSQLI_ASSOC))
                     {
                         echo '<tr>';

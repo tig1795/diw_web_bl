@@ -17,7 +17,7 @@
       <div class="nav-items">
           <li><a href="index2.php" class="active"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
           <li><a href="deutsche_meister.php"><i class="fa fa-trophy"></i> Deutsche Meister</a></li>
-          <li><a href="#"><i class="fa fa-calculator"></i> Statistik</a></li>
+          <li><a href="EW_Tabelle.php"><i class="fa fa-calculator"></i> Statistik</a></li>
           <li><a href="#"><i class="fa fa-users"></i> Vereine</a></li>
           <li><a href="#"><i class="fa fa-trophy"></i> Siegestrophäe</a></li>
           <li><a href="login2.php"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Login</a></li>
