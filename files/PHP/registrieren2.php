@@ -16,7 +16,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=chefkoch', 'root', ''); //Aufbau der
     <div class="row">
         <div class="logo-row">
             <a href="Index2.php">
-               <img src="../../images/chefkoch-logo_1-1-30.png" alt="logo" class="logo">
+               <img src="../../images/BL_Logo.jpg" alt="logo" class="logo">
             </a>
         </div>
     </div>

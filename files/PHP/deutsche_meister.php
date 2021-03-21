@@ -15,8 +15,8 @@
       <div class="menu-icon"><span class="fa fa-bars"></span></div>
       <div class="logo">Bundesliga</div>
       <div class="nav-items">
-          <li><a href="index2.php" class="active"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-          <li><a href="deutsche_meister.php"><i class="fa fa-trophy"></i> Deutsche Meister</a></li>
+          <li><a href="index2.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+          <li><a href="deutsche_meister.php" class="active"><i class="fa fa-trophy"></i> Deutsche Meister</a></li>
           <li><a href="#"><i class="fa fa-calculator"></i> Statistik</a></li>
           <li><a href="#"><i class="fa fa-users"></i> Vereine</a></li>
           <li><a href="#"><i class="fa fa-trophy"></i> Siegestrophäe</a></li>
@@ -60,3 +60,96 @@
 
 </body>
 </html>
+
+<?php
+
+session_start();
+// Startseite hier können allgemeine Funktionen oder aktuelles angezeigt werden
+$server = $_SERVER["SERVER_NAME"];
+$script = $_SERVER["SCRIPT_NAME"];
+require ( "funktionen.php" );
+
+
+$name_der_db  = "deutsche_meister_im_fußball";
+$benutzer     = "root";
+$passwort     = "";
+$tabellenname = "deutsche_meister_1902_1963";
+
+$link = our_sql_connect ( $server, $benutzer, $passwort, $name_der_db );
+
+
+print <<<EOH
+  
+  <form>
+  <br>
+    <h2>Deutsche Meister vor Gründung der Bundesliga (1902 - 1963):</h2><br>
+    <br>
+   
+    <section>
+        <p>
+EOH;
+
+$db = @new mysqli('localhost', 'root', '', 'deutsche_meister_im_fußball');
+
+$sql = "SELECT * FROM deutsche_meister_1902_1963";
+$ergebnis = $db->query($sql);
+    echo '<table border="1" class="gridtable">';
+    while ($zeile = mysqli_fetch_array($ergebnis, MYSQLI_ASSOC))
+    {
+        echo '<tr>';
+        echo "<td>". $zeile['ID'] . "</td>";
+        echo "<td>". $zeile['Saison'] . "</td>";
+        echo "<td>". $zeile['Meister'] . "</td>";
+        echo "<td>". $zeile['Endspieldatum'] . "</td>";
+        echo "<td>". $zeile['Endspielort'] . "</td>";
+        echo "<td>". $zeile['Endspielbegegnung'] . "</td>";
+        echo "<td>". $zeile['Ergebnis'] . "</td>";
+        echo "</tr>";
+    }                
+        echo "</table>";           
+    
+
+?>
+
+<?php
+
+$name_der_db  = "deutsche_meister_im_fußball";
+$benutzer     = "root";
+$passwort     = "";
+$tabellenname = "deutsche_meister_1963_2020";
+
+$link = our_sql_connect ( $server, $benutzer, $passwort, $name_der_db );
+
+
+print <<<EOH
+  
+  <form>
+  <br>
+    <h2>Deutsche Meister nach Gründung der Bundesliga (1963 - 2020):</h2><br>
+    <br>
+   
+    <section>
+        <p>
+EOH;
+
+$db = @new mysqli('localhost', 'root', '', 'deutsche_meister_im_fußball');
+
+$sql = "SELECT * FROM deutsche_meister_1963_2020";
+$ergebnis = $db->query($sql);
+    echo '<table border="1" class="gridtable">';
+    while ($zeile = mysqli_fetch_array($ergebnis, MYSQLI_ASSOC))
+    {
+        echo "<tr>";
+        echo "<td>". $zeile['ID'] . "</td>";
+        echo "<td>". $zeile['Saison'] . "</td>";
+        echo "<td>". $zeile['Meister'] . "</td>";
+        echo "<td>". $zeile['Tore'] . "</td>";
+        echo "<td>". $zeile['Punkte'] . "</td>";
+        echo "</tr>";
+    }                
+        echo "</table>";           
+    
+
+?>
+
+	
