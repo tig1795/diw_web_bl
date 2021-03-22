@@ -2,6 +2,5 @@
 
 ##TODO:
 
-- Meisterschale einfügen + Fakts
 - About in der Menüleiste (Mit Quellenangaben)
 - Design
