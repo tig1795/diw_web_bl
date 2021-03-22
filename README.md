@@ -2,5 +2,6 @@
 
 ##TODO:
 
-- About in der Menüleiste (Mit Quellenangaben)
-- Design
+- Verlinkung checken --> Suche/Suche2.php
+- Fußzeile in Impressum?
+- Schriftart ändern?
