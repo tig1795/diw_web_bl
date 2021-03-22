@@ -1,6 +1,6 @@
 <?php 
 session_start(); //Start der Registrierung
-$pdo = new PDO('mysql:host=localhost;dbname=chefkoch', 'root', ''); //Aufbau der Verbindung zur Datenbank
+$pdo = new PDO('mysql:host=localhost;dbname=deutsche_meister_im_fußball', 'root', ''); //Aufbau der Verbindung zur Datenbank
 //Datenbankname ist chefkoch, der Name des Datenbanknutzers ist root und der Nutzer verfügt über ein leeres
 //Passwort.
 ?>
@@ -15,7 +15,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=chefkoch', 'root', ''); //Aufbau der
 <header>
     <div class="row">
         <div class="logo-row">
-            <a href="Index2.php">
+            <a href="Index.php">
                <img src="../../images/BL_Logo.jpg" alt="logo" class="logo">
             </a>
         </div>

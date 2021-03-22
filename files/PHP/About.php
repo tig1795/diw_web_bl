@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Bundesliga</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style2.css">
     <link rel="stylesheet" href="../CSS/Fußzeile.css" type="text/css">
 	  <link rel="stylesheet" href="../CSS/Lieblingsrezepte.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,12 +15,12 @@
       <div class="menu-icon"><span class="fa fa-bars"></span></div>
       <div class="logo">Bundesliga</div>
       <div class="nav-items">
-          <li><a href="index2.php" class="active"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-          <li><a href="deutsche_meister2.php"><i class="fa fa-trophy"></i> Deutsche Meister</a></li>
-          <li><a href="EW_Tabelle2.php"><i class="fa fa-calculator"></i> Statistik</a></li>
-          <li><a href="Siegestrophäe2.php"><i class="fa fa-trophy"></i> Siegestrophäe</a></li>
-          <li><a href="About2.php"><i class="fa fa-info-circle"></i> About</a></li>
-          <li><a href="logout.php"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Logout</a></li>
+          <li><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+          <li><a href="deutsche_meister.php"><i class="fa fa-trophy"></i> Deutsche Meister</a></li>
+          <li><a href="EW_Tabelle.php"><i class="fa fa-calculator"></i> Statistik</a></li>
+          <li><a href="Siegestrophäe.php"><i class="fa fa-trophy"></i> Siegestrophäe</a></li>
+          <li><a href="About.php" class="active"><i class="fa fa-info-circle"></i> About</a></li>
+          <li><a href="login.php"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Login</a></li>
 
       </div>
       <div class="search-icon"><span class="fa fa-search"></span></div>
@@ -57,6 +57,23 @@
             cancelBtn.classList.add("show");
         }
     </script>
+    <br/>
+
+    <div class="info">
+<h2>Impressum</h2>
+</br>
+<p>Diese Website wurde von Timo Günther für das Seminar Datenbanken im Web an der Julius-Maximilians Universität Würzburg erstellt.</p>
+    </br>
+<p>Gegenstand dieser Website ist die Darlegung der deutschen Fußballmeister vor und nach Gründung der Bundesliga.</p>
+    </br>
+<p>Die dargestellten Informationen auf dieser Website stammen aus folgenden Quellen:</p>
+    </br>
+<li>https://www.dfb.de/bundesliga/statistik/bisherige-meister/</li>
+<li>https://www.dfb.de/historie/trophaeen/die-viktoria/</li>
+<li>https://www.dfb.de/historie/trophaeen/meisterschale/</li>
+<li>https://www.kicker.de/bundesliga/ewige-tabelle</li>
+
+</div>
 
 </body>
 </html>

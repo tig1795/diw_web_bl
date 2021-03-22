@@ -12,7 +12,7 @@ require ( "funktionen.php" );
   <head>
     <meta charset="utf-8">
     <title>Bundesliga</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style2.css">
     <link rel="stylesheet" href="../CSS/Fußzeile.css" type="text/css">
 	  <link rel="stylesheet" href="../CSS/Lieblingsrezepte.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,17 +24,17 @@ require ( "funktionen.php" );
       <div class="menu-icon"><span class="fa fa-bars"></span></div>
       <div class="logo">Bundesliga</div>
       <div class="nav-items">
-          <li><a href="index2.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+          <li><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
           <li><a href="deutsche_meister.php"  class="active"><i class="fa fa-trophy"></i> Deutsche Meister</a></li>
           <li><a href="#"><i class="fa fa-calculator"></i> Statistik</a></li>
-          <li><a href="#"><i class="fa fa-users"></i> Vereine</a></li>
           <li><a href="#"><i class="fa fa-trophy"></i> Siegestrophäe</a></li>
-          <li><a href="login2.php"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Login</a></li>
+          <li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
+          <li><a href="login.php"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Login</a></li>
 
       </div>
       <div class="search-icon"><span class="fa fa-search"></span></div>
       <div class="cancel-icon"><span class="fa fa-times"></span></div>
-      <form action="Suche2.php" method="get">
+      <form action="Suche.php" method="get">
         <input type="search" class="search-data" placeholder="Search" name="search" required/>
         <button type="submit" class="fa fa-search"></button>
       </form>

@@ -8,8 +8,8 @@
     <header>
         <div class="row">
             <div class="logo-row">
-              <a href="../PHP/Index2.php">
-               <img src="../../images/chefkoch-logo_1-1-30.png" alt="logo" class="logo">
+              <a href="../PHP/Index.php">
+               <img src="../../images/BL_Logo.jpg" alt="logo" class="logo">
               </a>
             </div>
         </div>
@@ -22,5 +22,5 @@
 session_start();
 session_destroy();  //Cookies und $_SESSION wird geleert.
  
-echo "Logout erfolgreich. Zurück zur <a href= Index2.php> Startseite.</a>";
+echo "Logout erfolgreich. Zurück zur <a href= Index.php> Startseite.</a>";
 ?>

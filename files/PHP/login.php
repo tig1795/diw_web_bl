@@ -8,7 +8,7 @@
     <header>
         <div class="row">
             <div class="logo-row">
-              <a href="index2.php">
+              <a href="index.php">
                <img src="../../images/BL_Logo.jpg" alt="logo" class="logo">
               </a>
             </div>
@@ -21,7 +21,7 @@
 
 <?php 
 session_start();
-$pdo = new PDO('mysql:host=localhost;dbname=chefkoch', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=deutsche_meister_im_fußball', 'root', '');
 //Die PHP Data Objects-Erweiterung (PDO) stellt eine leichte, konsistente Schnittstelle bereit, um mit PHP auf Datenbanken zuzugreifen. 
 //Jeder Datenbanktreiber, der die PDO-Schnittstelle implementiert, kann spezifische Features als reguläre Funktionen der Erweiterung bereitstellen. 
  
@@ -68,7 +68,7 @@ Dein Passwort:<br>
 <input type="submit" value="Abschicken"><br>
 <br>
 
-<p>Sie haben noch kein Konto? <a href="registrieren2.php">Hier registrieren</a>.</p>
+<p>Sie haben noch kein Konto? <a href="registrieren.php">Hier registrieren</a>.</p>
 </form> 
 </body>
 </html>

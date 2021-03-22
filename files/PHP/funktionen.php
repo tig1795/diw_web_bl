@@ -138,7 +138,7 @@ EOH;
 
 active_or_hover ($title, "dinner");
 print <<<EOH
-            <li><a href="login2.php"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Login</a></li>
+            <li><a href="login.php"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Login</a></li>
             </div>
 EOH;
 
@@ -152,7 +152,7 @@ print <<<EOH
 EOH;
 
 print <<<EOH
-        <form action="Suche2.php" method="get">
+        <form action="Suche.php" method="get">
           <input type="search" class="search-data" placeholder="Search" name="search" required/>
           <button type="submit" class="fa fa-search"></button>
         </form>
