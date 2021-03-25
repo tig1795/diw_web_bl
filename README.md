@@ -5,3 +5,5 @@
 - Verlinkung checken --> Suche/Suche2.php
 - Fußzeile in Impressum?
 - Schriftart ändern?
+- Position der Bildunterschriften?
+- weiße Hinterlgung des Menüpunktes Siegestrophäen
