@@ -7,3 +7,4 @@
 - Schriftart ändern?
 - Position der Bildunterschriften?
 - weiße Hinterlgung des Menüpunktes Siegestrophäen
+- Schrift unter Slideshow (respinsive Design)
