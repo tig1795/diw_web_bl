@@ -24,17 +24,17 @@ require ( "funktionen.php" );
       <div class="menu-icon"><span class="fa fa-bars"></span></div>
       <div class="logo">Bundesliga</div>
       <div class="nav-items">
-          <li><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-          <li><a href="deutsche_meister.php"  class="active"><i class="fa fa-trophy"></i> Deutsche Meister</a></li>
-          <li><a href="EW_Tabelle.php"><i class="fa fa-calculator"></i> Statistik</a></li>
-          <li><a href="Siegestrophäe.php"><i class="fa fa-trophy"></i> Siegestrophäe</a></li>
-          <li><a href="About.php"><i class="fa fa-info-circle"></i> About</a></li>
-          <li><a href="login.php"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Login</a></li>
+          <li><a href="index2.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+          <li><a href="deutsche_meister2.php"  class="active"><i class="fa fa-trophy"></i> Deutsche Meister</a></li>
+          <li><a href="EW_Tabelle2.php"><i class="fa fa-calculator"></i> Statistik</a></li>
+          <li><a href="Siegestrophäe2.php"><i class="fa fa-trophy"></i> Siegestrophäe</a></li>
+          <li><a href="About2.php"><i class="fa fa-info-circle"></i> About</a></li>
+          <li><a href="logout.php"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Logout</a></li>
 
       </div>
       <div class="search-icon"><span class="fa fa-search"></span></div>
       <div class="cancel-icon"><span class="fa fa-times"></span></div>
-      <form action="Suche.php" method="get">
+      <form action="Suche2.php" method="get">
         <input type="search" class="search-data" placeholder="Search" name="search" required/>
         <button type="submit" class="fa fa-search"></button>
       </form>

@@ -75,7 +75,7 @@ if(isset($_GET['register'])) { //Überprüfung, ob der GET-Parameter übergeben 
         $result = $statement->execute(array('vorname' => $vorname, 'nachname' => $nachname, 'email' => $email, 'passwort' => $passwort_hash));
 
         if($result) {        
-            echo 'Du wurdest erfolgreich registriert. <a href="login2.php">Zum Login</a>';
+            echo 'Du wurdest erfolgreich registriert. <a href="login.php">Zum Login</a>';
             $showFormular = false; //Verhinderung im Erfolgsfall einer erneuten Ausgabe 
                                   // des Registrierungsformulars.
         } else {

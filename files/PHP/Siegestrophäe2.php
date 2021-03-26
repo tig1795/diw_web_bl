@@ -26,7 +26,7 @@
       </div>
       <div class="search-icon"><span class="fa fa-search"></span></div>
       <div class="cancel-icon"><span class="fa fa-times"></span></div>
-      <form action="Suche.php" method="get">
+      <form action="Suche2.php" method="get">
         <input type="search" class="search-data" placeholder="Search" name="search" required/>
         <button type="submit" class="fa fa-search"></button>
       </form>
