@@ -1,4 +1,4 @@
-/* Center Logo */
+/* Zentrieren des Logos */
 
 body {
     width: 90%;
@@ -35,72 +35,20 @@ body {
     margin: 10px 20px;
 }
 
-/* button {
-    background-color: #eee;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    color: #444;
-    cursor: pointer;
-    display: block;
-    font-size: 22px; //fallback 
-    font-size: var(--mobile-font-size);
-    font-weight: 500;
-    margin: 3px 0 0 0;
-    padding: 10px;
-} */
-
-/* button:hover {
-    background-color: #ccc;
-    color: black;
-} */
-
-/* button#sign-in {
-    margin: 0;
-} */
-
-/* button#sign-in:disabled {
-    background-color: #ccc;
-    color: black;
-    cursor: default;
-} */
-
-/* button#toggle-password {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-weight: 300;
-    padding: 0;
-    // Display at the top right of the password section
-    position: absolute;
-    top: -4px;
-    right: -2px;
-  } */
-
-/* div#password-constraints {
-    margin: 5px 0 0 0;
-    font-size: 16px;
-  } */
 
 form {
     margin: 0 auto;    /* Positionierung der Eingabeoberfläche */
     max-width: 500px;
 }
 
-/* h1 {
-    border-bottom: 1px solid #ccc;
-    font-size: 28px;
-    font-weight: 600;
-    margin: 0 0 20px 0;
-    padding: 0 0 5px 0;
-} */
 
 input { /* Design der Eingabeoberfläche */
     border: 1px solid #ccc;
-    font-size: 22px; /* fallback */
+    font-size: 22px;
     font-size: var(--mobile-font-size);
     padding: 15px;
-    width: 90%; /* fallback */
-    width: calc(100% - 30px); /* full width minus padding */
+    width: 90%;
+    width: calc(100% - 30px); /* volle Breite minus Füllung */
 } 
 
 input[type=email]:not(:focus):invalid,
@@ -117,27 +65,14 @@ input[type=submit]{ /* Design des Knopfes */
     color: #444;
     cursor: pointer;
     display: block;
-    font-size: 22px; /* fallback */
+    font-size: 22px;
     font-size: var(--mobile-font-size);
     font-weight: 500;
     margin: 3px 0 0 0;
     padding: 10px;
 }
 
-input[type=submit]:hover {
-    background-color: green;
+form input[type=submit]:hover {
+    background-color: red;
     color: white;
 }
-
-/* label {
-    display: block;
-    font-size: 20px;
-    font-size: var(--mobile-font-size);
-    font-weight: 500;
-    margin: 0 0 3px 0;
-} */
-
-/* form section {
-    margin: 0 0 20px 0;
-    position: relative; / for password toggle positioning /
-  } */

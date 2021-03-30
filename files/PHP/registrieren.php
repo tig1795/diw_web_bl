@@ -5,6 +5,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=deutsche_meister_im_fußball', 'root
 //Passwort.
 ?>
 
+<!-- Code der Kopfzeile -->
 <!DOCTYPE html> 
 <html> 
 <head>
@@ -87,6 +88,8 @@ if(isset($_GET['register'])) { //Überprüfung, ob der GET-Parameter übergeben 
 if($showFormular) {
 ?>
  
+<!-- Code der Eingabeoberfläche -->
+
 <form action="?register=1" method="post">
 Vorname:<br>
 <br>

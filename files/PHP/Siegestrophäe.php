@@ -1,3 +1,5 @@
+<!-- Code der Menüleiste -->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -5,8 +7,6 @@
     <title>Bundesliga</title>
     <link rel="stylesheet" href="../CSS/style2.css">
     <link rel="stylesheet" href="../CSS/slide.css" type="text/css">
-    <link rel="stylesheet" href="../CSS/Fußzeile.css" type="text/css">
-	<link rel="stylesheet" href="../CSS/Lieblingsrezepte.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -62,10 +62,10 @@
 
     <h2>Die Triophäen der deutschen Fußballbundesliga</h2>
     </br>
-      <!-- Slideshow container -->
+      <!-- Karousel container -->
 <div class="slideshow-container">
 
-<!-- Full-width images with number and caption text -->
+<!-- Bilder in voller Breite mit Nummer und Beschriftungstext -->
 <div class="mySlides fade">
   <div class="numbertext">1 / 2</div>
   <img src="../../images/Viktoria.jpg" style="width:100%">
@@ -78,13 +78,13 @@
   <div class="text">Meisterschale</div>
 </div>
 
-<!-- Next and previous buttons -->
+<!-- Nächste und vorherige Tasten -->
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
 
-<!-- The dots/circles -->
+<!-- Die Punkte/Kreise -->
 <div style="text-align:center">
 <span class="dot" onclick="currentSlide(1)"></span>
 <span class="dot" onclick="currentSlide(2)"></span>
@@ -93,6 +93,7 @@
 <script src="../JavaScript/script.js"></script>
 </br>
 
+<!-- Infos zu den Trophäen -->
 <div class="victoria">
 <h2>Viktoria</h2>
 </br>

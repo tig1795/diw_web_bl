@@ -1,11 +1,12 @@
+<!-- Code der Menüleiste -->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Bundesliga</title>
     <link rel="stylesheet" href="../CSS/style2.css">
-    <link rel="stylesheet" href="../CSS/Fußzeile.css" type="text/css">
-	  <link rel="stylesheet" href="../CSS/Lieblingsrezepte.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/slide.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -58,6 +59,8 @@
         }
     </script>
     <br/>
+
+<!-- Inhalt der Seite -->
 
     <div class="info">
 <h2>Impressum</h2>

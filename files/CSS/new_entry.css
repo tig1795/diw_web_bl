@@ -5,11 +5,11 @@ form {
 
 input { /* Design der Eingabeoberfläche */
     border: 1px solid #ccc;
-    font-size: 22px; /* fallback */
+    font-size: 22px;
     font-size: var(--mobile-font-size);
     padding: 15px;
-    width: 90%; /* fallback */
-    width: calc(100% - 30px); /* full width minus padding */
+    width: 90%;
+    width: calc(100% - 30px); /* volle Breite minus Füllung */
 } 
 
 input[type=text]:not(:focus):invalid {
@@ -24,7 +24,7 @@ input[type=submit]{ /* Design des Knopfes */
     color: #444;
     cursor: pointer;
     display: block;
-    font-size: 22px; /* fallback */
+    font-size: 22px;
     font-size: var(--mobile-font-size);
     font-weight: 500;
     margin: 3px 0 0 0;

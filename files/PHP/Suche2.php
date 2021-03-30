@@ -7,14 +7,14 @@ $script = $_SERVER["SCRIPT_NAME"];
 require ( "funktionen.php" );
 ?>
 
+<!-- Code der Menüleiste -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Bundesliga</title>
     <link rel="stylesheet" href="../CSS/style2.css">
-    <link rel="stylesheet" href="../CSS/Fußzeile.css" type="text/css">
-	  <link rel="stylesheet" href="../CSS/Lieblingsrezepte.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/slide.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -71,13 +71,13 @@ require ( "funktionen.php" );
 </html>
 
 <?php
-
+//Suchfunktion
 $name_der_db  = "deutsche_meister_im_fußball";
 $benutzer     = "root";
 $passwort     = "";
 $tabellenname = "deutsche_meister_1902_1963";
 
-$link = our_sql_connect ( $server, $benutzer, $passwort, $name_der_db );
+$link = our_sql_connect ( $server, $benutzer, $passwort, $name_der_db ); //Verbindung zur SQL-Datenbank
 
 
 print <<<EOH
@@ -98,7 +98,7 @@ EOH;
                 for($i = 0; $i < sizeof($suchwort); $i++)
                 {
                     $abfrage .= "`Meister` LIKE '%" . $suchwort[$i] . "%'";
-                    $abfrage2 .= "`Saison` LIKE '%" . $suchwort[$i] . "%'";
+                    $abfrage2 .= "`Saison` LIKE '%" . $suchwort[$i] . "%'"; //Geht Buchstabe für Buchstabe das Suchwort durch
                     if($i < (sizeof($suchwort) - 1)) {
                         $abfrage .= "OR"; 
                         $abfrage2 .= "OR";    
@@ -111,7 +111,7 @@ EOH;
                     $sql = "SELECT * FROM `deutsche_meister_1902_1963` WHERE ".$abfrage . "OR" . $abfrage2;
                     $ergebnis = $db->query($sql);
 
-                    echo '<table border="1" class="gridtable">';
+                    echo '<table border="1" class="gridtable">'; //Erstellung des Tabellenkopfs
                     print <<<EOH
                     <tr>
                     <th>ID</th>
@@ -123,7 +123,7 @@ EOH;
                     <th>Ergebnis</th>
                     </tr>
                     EOH;
-                    while ($zeile = mysqli_fetch_array($ergebnis, MYSQLI_ASSOC))
+                    while ($zeile = mysqli_fetch_array($ergebnis, MYSQLI_ASSOC)) //Befüllung der Tabelle
                     {
                         echo '<tr>';
                         echo "<td>". $zeile['ID'] . "</td>";
@@ -155,7 +155,7 @@ $benutzer     = "root";
 $passwort     = "";
 $tabellenname = "deutsche_meister_1963_2020";
 
-$link = our_sql_connect ( $server, $benutzer, $passwort, $name_der_db );
+$link = our_sql_connect ( $server, $benutzer, $passwort, $name_der_db ); //Verbindung zur SQL-Datenbank
 
 
 print <<<EOH
@@ -175,7 +175,7 @@ EOH;
                 for($i = 0; $i < sizeof($suchwort); $i++)
                 {
                     $abfrage .= "`Meister` LIKE '%" . $suchwort[$i] . "%'";
-                    $abfrage2 .= "`Saison` LIKE '%" . $suchwort[$i] . "%'";
+                    $abfrage2 .= "`Saison` LIKE '%" . $suchwort[$i] . "%'"; //Geht Buchstabe für Buchstabe das Suchwort durch
                     if($i < (sizeof($suchwort) - 1)) {
                         $abfrage .= "OR"; 
                         $abfrage2 .= "OR";    
@@ -188,7 +188,7 @@ EOH;
                     $sql = "SELECT * FROM `deutsche_meister_1963_2020` WHERE ".$abfrage . "OR" . $abfrage2;
                     $ergebnis = $db->query($sql);
 
-                    echo '<table border="1" class="gridtable">';
+                    echo '<table border="1" class="gridtable">'; //Erstellung des Tabellenkopfs
                     print <<<EOH
                     <tr>
                     <th>ID</th>
@@ -198,7 +198,7 @@ EOH;
                     <th>Punkte</th>
                     </tr>;
                     EOH;
-                    while ($zeile = mysqli_fetch_array($ergebnis, MYSQLI_ASSOC))
+                    while ($zeile = mysqli_fetch_array($ergebnis, MYSQLI_ASSOC)) //Befüllung der Tabelle
                     {
                         echo '<tr>';
                         echo "<td>". $zeile['ID'] . "</td>";
@@ -215,7 +215,7 @@ EOH;
         
 
   print'  </section><br>';
-  my_html_foot ( );
+  
 
 ?>
 

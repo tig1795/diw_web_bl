@@ -1,11 +1,12 @@
+<!-- Code der Menüleiste -->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Bundesliga</title>
     <link rel="stylesheet" href="../CSS/style2.css">
-    <link rel="stylesheet" href="../CSS/Fußzeile.css" type="text/css">
-	  <link rel="stylesheet" href="../CSS/Lieblingsrezepte.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/slide.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -66,6 +67,8 @@
 </body>
 </html>
 
+<!-- PHP-Code zur Anzeige der vollständigen Tabellen -->
+
 <?php
 
 session_start();
@@ -80,7 +83,7 @@ $benutzer     = "root";
 $passwort     = "";
 $tabellenname = "deutsche_meister_1902_1963";
 
-$link = our_sql_connect ( $server, $benutzer, $passwort, $name_der_db );
+$link = our_sql_connect ( $server, $benutzer, $passwort, $name_der_db ); //Verbindung zur Datenbank
 
 
 print <<<EOH
@@ -96,21 +99,23 @@ EOH;
 
 $db = @new mysqli('localhost', 'root', '', 'deutsche_meister_im_fußball');
 
-$sql = "SELECT * FROM deutsche_meister_1902_1963";
+$sql = "SELECT * FROM deutsche_meister_1902_1963"; //SQL-Statement zur Abfrage der ganzen Tabelle
 $ergebnis = $db->query($sql);
     echo '<table border="1" class="gridtable">';
+    // Definition des Tabellenkopfes
 print <<<EOH
     <tr>
     <th>ID</th>
     <th>Saison</th>
-    <th>Meister</th>
-    <th>Endspieldatum</th>
+    <th>Meister</th>            
+    <th>Endspieldatum</th>                        
     <th>Endspielort</th>
     <th>Enspielbegegnung</th>
     <th>Ergebnis</th>
     </tr>
 EOH;
-
+    
+    //Zeile für Zeile die Tabelle befüllen
     while ($zeile = mysqli_fetch_array($ergebnis, MYSQLI_ASSOC))
     {
         echo '<tr>';
@@ -135,7 +140,7 @@ $benutzer     = "root";
 $passwort     = "";
 $tabellenname = "deutsche_meister_1963_2020";
 
-$link = our_sql_connect ( $server, $benutzer, $passwort, $name_der_db );
+$link = our_sql_connect ( $server, $benutzer, $passwort, $name_der_db ); //Verbindung zur Datenbank
 
 
 print <<<EOH
@@ -151,9 +156,10 @@ EOH;
 
 $db = @new mysqli('localhost', 'root', '', 'deutsche_meister_im_fußball');
 
-$sql = "SELECT * FROM deutsche_meister_1963_2020";
+$sql = "SELECT * FROM deutsche_meister_1963_2020";  //SQL-Statement zur Abfrage der ganzen Tabelle
 $ergebnis = $db->query($sql);
     echo '<table border="1" class="gridtable">';
+    // Definition des Tabellenkopfes
 print <<<EOH
     <tr>
     <th>ID</th>
@@ -163,6 +169,7 @@ print <<<EOH
     <th>Punkte</th>
     </tr>;
 EOH;
+    //Zeile für Zeile die Tabelle befüllen
     while ($zeile = mysqli_fetch_array($ergebnis, MYSQLI_ASSOC))
     {
         echo "<tr>";

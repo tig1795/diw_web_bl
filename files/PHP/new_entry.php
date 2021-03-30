@@ -1,3 +1,5 @@
+<!-- Code der Menüleiste -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,8 +7,7 @@
     <title>Hinzufügen eines neuen Deutschen Meisters</title>
     <link rel="stylesheet" href="../CSS/style2.css">
     <link rel="stylesheet" href="../CSS/new_entry.css">
-    <link rel="stylesheet" href="../CSS/Fußzeile.css" type="text/css">
-	<link rel="stylesheet" href="../CSS/Lieblingsrezepte.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/slide.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -60,6 +61,7 @@
     </script>
     <br/>
 
+    <!-- Code für die Eingabeoberfläche -->
     <h2>Tragen Sie hier den neuen Deutschen Meister ein:</h2>
     </br>
 

@@ -1,3 +1,5 @@
+<!-- Code der Kopfzeile -->
+
 <!DOCTYPE html> 
 <html> 
 <head>
@@ -15,6 +17,7 @@
         </div>
     </header>
     <br>
+    <!-- Code des Seiteninhalts -->
     <h2>Sie möchten einen neuen deutschen Fußballmeister eintragen?</h2>
     </br>
     <div class="verweis">

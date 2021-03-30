@@ -1,3 +1,5 @@
+<!-- Code der Kopfzeile -->
+
 <!DOCTYPE html> 
 <html> 
 <head>
@@ -52,6 +54,8 @@ if(isset($errorMessage)) {
     echo $errorMessage;
 }
 ?>
+
+<!-- Code für das Eingabeformular -->
  
 <form action="?login=1" method="post">
 E-Mail:<br>

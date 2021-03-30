@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+
+/* Angaben für alle Inhalte der Seite */
 *{
     margin: 0;
     padding: 0;
@@ -8,12 +10,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Hintergrundbild der Startseite festlegen */
 body{
     background-image: url('../../images/BL_Hintergrund.jpg');
     background-size: cover;
     
 }
 
+/* Angaben beziehen sich auf die ganze Menüleiste */
 nav{
     background: #171c24;
     display: flex;
@@ -24,10 +28,12 @@ nav{
     padding: 0 100px;
 }
 
+/* Rote Unterlegung des aktiven Menüpunktes */
 .nav-items li a.active {
     border-bottom: 3px solid red;
   }
 
+/*Bezieht sich auf den Schriftzug links in der Menüleiste */
 nav .logo{
     color: #fff;
     font-size: 30px;
@@ -35,6 +41,7 @@ nav .logo{
     letter-spacing: -1px;
 }
 
+/*Bezieht sich auf Einträge der Menüleiste*/
 nav .nav-items{
     display: flex;
     flex: 1;
@@ -58,6 +65,7 @@ nav .nav-items li a:hover{
     color: #ff3d00;
 }
 
+/* Bezieht sich auf die Suchleiste */
 nav form{
     display: flex;
     height: 40px;
@@ -80,6 +88,7 @@ nav form .search-data{
     font-size: 17px;
 }
 
+/* Suchknopf */
 nav form button{
     padding: 0 15px;
     background: #ff3d00;
@@ -90,6 +99,7 @@ nav form button{
     border-radius: 2px;
 }
 
+/*Bezieht sich auf die Icons in der alternative Darstellung der Menüleiste */
 nav .menu-icon,
 nav .search-icon,
 nav .cancel-icon{
@@ -108,6 +118,7 @@ nav .cancel-icon{
     display: none;
 }
 
+/* Angaben bezüglich der Darstellung der Menüleist im Hinblick auf das responsive design */ 
 @media (max-width: 1245px){
     nav{
         padding: 0 50px;
@@ -230,18 +241,18 @@ table.gridtable {
     margin-left: auto;
     margin-right: auto;
 }
-
+/* Darstellung der Überschriften*/
 h2{
     color: black;
     background-color: white;
     text-align: center;
 }
-
+/*Schriftzug der Verlinkung zur Eingabeoberfläche für neue deutsche Meister */ 
 .entry{
     color:black;
     background-color: white;
 }
-
+/*Formatierung des Textes bezüglich der Viktoria */
 .victoria{
     color: black;
     text-align: justify;
@@ -249,7 +260,7 @@ h2{
     margin-left: 500px;
     margin-right: 500px;
 }
-
+/* Formatierung des Textes bezüglich der Meisterschale */
 .master{
     color: black;
     text-align: justify;

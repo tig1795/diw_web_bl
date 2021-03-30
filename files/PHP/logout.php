@@ -1,3 +1,5 @@
+<!-- Code der Kopfzeile -->
+
 <!DOCTYPE html> 
 <html> 
 <head>
@@ -20,7 +22,7 @@
 
 <?php
 session_start();
-session_destroy();  //Cookies und $_SESSION wird geleert.
+session_destroy();  //Session wird beendet.
  
 echo "Logout erfolgreich. Zurück zur <a href= Index.php> Startseite.</a>";
 ?>
