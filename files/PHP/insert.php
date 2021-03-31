@@ -1,7 +1,8 @@
+<!--Skript um einen neuen Deutschen Meister im Fußball anzulegen -->
 <?php
 
 session_start();
-// Skript um einen neuen Deutschen Meister im Fußball anzulegen
+
 require ( "funktionen.php" );
 
 $server = $_SERVER["SERVER_NAME"];
